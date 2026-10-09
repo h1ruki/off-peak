@@ -1,6 +1,6 @@
 # Data
 
-Off-Peak uses TfL's daily **Station Footfall** data. The raw files are not committed to this repo. Download them yourself and put them in `data/raw/`.
+Off-Peak uses TfL's daily **Station Footfall** data. The seven CSVs in `data/raw/` are versioned in this repo as the pinned snapshot audited in Phase 0. Their latest observation is 4 July 2026. Other raw files and downloaded archives are not committed.
 
 - **Source:** [TfL network demand data](https://tfl.gov.uk/corporate/publications-and-reports/network-demand-data), Station Footfall documents
 - **Snapshot:** downloaded 9 Oct 2026, covering 1 Jan 2019 to 4 Jul 2026
@@ -27,4 +27,4 @@ Rows exclude the header line.
 Get-FileHash .\data\raw\*.csv -Algorithm SHA256 | Format-Table -AutoSize
 ```
 
-Every hash should match the table. If TfL has published newer files, keep this snapshot for v1 so the report and the validation results stay reproducible.
+Every hash should match the table. If TfL has published newer files, keep this snapshot for v1 so the report and the validation results stay reproducible. Replacing it requires a new audit, new checksums and an update to this document before the files are committed.

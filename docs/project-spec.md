@@ -78,7 +78,7 @@ Scope froze at the end of Phase 0 (9 Oct 2026). Nothing is added to v1 except th
 
 Columns: `TravelDate` (text, yyyymmdd), `DayOfWeek` (`DayOFWeek` in 2019–2022), `Station`, `EntryTapCount`, `ExitTapCount`.
 
-File names, sizes and SHA-256 checksums are in `data/README.md`. Raw files live in `data/raw/` and are never committed.
+File names, sizes and SHA-256 checksums are in `data/README.md`. The seven pinned CSVs live in `data/raw/` and are versioned with the repo. No other raw files are committed.
 
 ## Phase 0 audit results
 
@@ -268,7 +268,7 @@ About a week in total. The phase times are build time; learning Power BI comes o
 
 ## Deliverables and repo
 
-One public GitHub repo, **off-peak** (private until v1 ships). Raw TfL files aren't committed; `data/README.md` says where to download them and how to verify them.
+One public GitHub repo, **off-peak** (private until v1 ships). The seven pinned TfL CSVs are versioned in `data/raw/`; `data/README.md` documents their checksums, attribution and how to verify them.
 
 **Report format:** the report is developed as a Power BI Project (`.pbip`), so the semantic model (TMDL) and report definition (PBIR, where the installed Desktop version supports it) are text files that Git and Claude Code can diff and review. The recruiter-friendly `.pbix` is produced at release with **File → Save as**, attached to a GitHub Release, and never tracked in history. Local PBIP caches (`.pbi/localSettings.json`, `.pbi/cache.abf`) are ignored; `.pbi/editorSettings.json` is tracked.
 
@@ -295,7 +295,7 @@ off-peak/
 │   └── demo.mp4
 └── data/
     ├── README.md          sources, snapshot date, checksums
-    └── raw/               the seven CSVs, never committed
+    └── raw/               the seven pinned CSVs, versioned
 ```
 
 ## Appendix A: Elizabeth line corridor (30 stations)

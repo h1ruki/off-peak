@@ -1,0 +1,2 @@
+# Preserve audited source data byte-for-byte
+data/raw/*.csv -text

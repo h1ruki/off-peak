@@ -1,5 +1,14 @@
-# Raw downloaded TfL datasets and archives
-data/raw/
+# Raw TfL datasets: only the seven audited Phase 0 CSVs are versioned.
+# Downloaded archives and any other file in data/raw/ stay ignored.
+data/raw/*
+!data/raw/StationFootfall_2019.csv
+!data/raw/StationFootfall_2020.csv
+!data/raw/StationFootfall_2021.csv
+!data/raw/StationFootfall_2022.csv
+!data/raw/StationFootfall_2023.csv
+!data/raw/StationFootfall_2024.csv
+!data/raw/stationfootfall-2025-2026.csv
+# Downloaded archives
 *.zip
 *.7z
 *.rar

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "off-peak"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fc71574e-848b-4190-a511-e520ba99e2d4"
+  }
+}
