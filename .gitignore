@@ -1,0 +1,34 @@
+# Raw downloaded TfL datasets and archives
+data/raw/
+*.zip
+*.7z
+*.rar
+*.gz
+*.tar
+
+# Local temporary files and caches
+.cache/
+tmp/
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python virtual environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment and credential files
+.env
+.env.*
+credentials*
+secrets*
+*.pem
+*.key
+
+# Power BI temporary, lock and local cache files
+~$*
+*.laccdb
+.pbi/
