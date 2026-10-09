@@ -10,6 +10,7 @@ station-footfall data.
 - **Supporting tools:** VS Code and Git (documentation, validation scripts and project assets)
 - **Source:** TfL station-footfall data
 
-**Status:** Phase 0 — Data Audit
+**Status:** Phase 1 — Power Query and data model. Phase 0 data audit complete; the
+project specification is in [`docs/project-spec.md`](docs/project-spec.md).
 
 No analytical results are published in this repository yet.
