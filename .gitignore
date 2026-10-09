@@ -31,4 +31,11 @@ secrets*
 # Power BI temporary, lock and local cache files
 ~$*
 *.laccdb
-.pbi/
+
+# Power BI Project (PBIP) local files, per Microsoft's default PBIP .gitignore.
+# .pbi/editorSettings.json stays tracked.
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# PBIX is a release artefact, attached to GitHub Releases, not tracked in history
+*.pbix

@@ -44,7 +44,7 @@ Scope froze at the end of Phase 0 (9 Oct 2026). Nothing is added to v1 except th
 - The measures listed in Metrics, and no others
 - Power BI's built-in tooltips only
 - Off-Peak theme file and one designed page background
-- GitHub repo `off-peak` with README, three findings, screenshots, demo video and the .pbix
+- GitHub repo `off-peak` with README, three findings, screenshots, demo video, the PBIP project and a .pbix on the release
 
 **Out of v1 (parking lot)**
 
@@ -270,11 +270,15 @@ About a week in total. The phase times are build time; learning Power BI comes o
 
 One public GitHub repo, **off-peak** (private until v1 ships). Raw TfL files aren't committed; `data/README.md` says where to download them and how to verify them.
 
+**Report format:** the report is developed as a Power BI Project (`.pbip`), so the semantic model (TMDL) and report definition (PBIR, where the installed Desktop version supports it) are text files that Git and Claude Code can diff and review. The recruiter-friendly `.pbix` is produced at release with **File → Save as**, attached to a GitHub Release, and never tracked in history. Local PBIP caches (`.pbi/localSettings.json`, `.pbi/cache.abf`) are ignored; `.pbi/editorSettings.json` is tracked.
+
 ```
 off-peak/
 ├── README.md              question, sources + licence, method, rules, 3 findings, limitations
 ├── report/
-│   └── off-peak.pbix
+│   ├── off-peak.pbip                project entry point (open this in Power BI Desktop)
+│   ├── off-peak.Report/             report definition (PBIR)
+│   └── off-peak.SemanticModel/      model, Power Query and DAX (TMDL)
 ├── theme/
 │   └── off-peak.json      the Power BI theme
 ├── assets/
